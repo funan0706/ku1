@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+</head>
+    <style>
+        /*设置上部边栏*/
+        header{
+            width: 100%;
+            height: 62px;
+            background-color: rgb(239,244,250);
+            display: flex; 
+            align-items: center; 
+            /*实现元素垂直居中*/
+        }
+        .a2{ 
+            margin-left: 38px;
+            margin-right: auto; 
+        }
+        .a1{
+            font-size: 12px;
+            text-decoration: none;
+            color: rgb(29,84,148);
+            padding: 5px;
+        }
+        .a1:hover{
+            text-decoration:underline;
+        }
+        .rr{
+            margin-right: 38px;
+            /*让最后一个超链接到最右，使a1分布在右侧*/
+        }
+        .s1{
+            color: rgb(182,182,197);
+        }
+        .img1{
+            padding-left: 250px;
+            padding-top: 100px;
+            /*调图片的位置*/
+        }
+        /*登录的盒子*/
+        .box1{
+            width: 334px;
+            height: 387px;
+            border: 1px rgb(160,177,196) solid;
+            position: absolute;
+            left: 850px;
+            top:140px;
+        }
+        .box2{
+            width: 167px;
+            height: 50px;
+            display: flex; 
+            align-items: center;
+            justify-content: center;
+            background-color:rgb(249,251,254);
+            border-bottom:1px  rgb(160,177,196) solid;
+        }
+        .box3{
+            width: 167px;
+            height: 50px;
+            display: flex; 
+            align-items: center;
+            justify-content: center;
+            border-bottom:1px  rgb(160,177,196) solid;
+            position: absolute;
+            left: 167px;
+            top: 0px;
+            /*可不可以不调position，使其变为行内元素并排*/
+            background-color:rgb(249,251,254)
+        }
+        .a3{
+            text-decoration: none;
+            color: rgb(153,153,153);
+        }
+        .a4{
+            text-decoration: none;
+            color: rgb(51,51,51); 
+        }
+        /*input标签的样式*/
+        .box4{
+            width: 284px;
+            height: 300px;
+            position: absolute;
+            top: 82px;
+        }
+        .it1{
+            width: 262px;
+            height: 18px;
+            padding: 10px;
+            margin: 10px 24px 0px 24px;
+        }
+        .it2{
+            width: 262px;
+            height: 18px;
+            margin: 10px 24px 10px 24px;
+            padding: 10px;
+        }
+        input[type=text]{
+            border:1px solid rgb(150, 165, 180);
+        border-radius: 1px;
+        }
+        input[type=password]{
+            border:1px solid rgb(150, 165, 180);
+        border-radius: 1px;
+        }
+        input[type=text]:focus {
+        outline: none;
+        border : 1px solid rgb(72,146,231);
+        border-radius: 1px;
+        }
+        input[type=password]:focus {
+        outline: none;
+        border :  1px solid rgb(72,146,231);
+        border-radius: 1px;
+        }        
+        input[type='checkbox']
+        {
+            border:1px solid rgb(150, 165, 180);
+            margin-left:24px;
+            width:20px;
+            height:20px;     
+            position: absolute;
+            top: 120px;
+        }
+
+        #span1{
+            font-size: 12px;
+            margin-left: 48px;
+            position: relative;
+            top: 11px;
+        }
+        .submit{
+            margin-left:24px;
+            margin-top:10px;
+            width:280px;
+            height:40px;
+            background:rgb(106,162,224);
+            border:1px solid cornflowerblue;
+            border-radius: 2px;
+            font-size:18px;
+            color:white;
+            cursor: pointer;/*实现点击*/  
+            position: absolute;
+            top: 238px;
+        }
+        .a5{
+            width: auto;
+            height: auto;
+            font-size: 13px;
+            position: absolute;
+            top: 296px;
+            left: 125px;
+            text-decoration: none;
+            color: rgb(34,85,146);
+        }
+        #imag1{
+            position: relative;
+            top: 1px;
+        }
+        .a6{
+            font-size: 12px;
+            position: absolute;
+            top: 357px;
+            left: 28px;
+            text-decoration: none;
+            color: rgb(34,85,146);
+        }
+        .a7{
+            font-size: 12px;
+            position: absolute;
+            top: 357px;
+            right: 28px;
+            text-decoration: none;
+            color: rgb(34,85,146);
+        }
+        /*有些鼠标移过去时又会有下划线*/
+        .a6:hover,.a7:hover{
+            text-decoration:underline;
+        }
+        .box5{
+            width:100%;/*占满空间*/
+            height: 36px;
+            background-color:rgb(239,244,250);
+            position: absolute;
+            bottom: 0;
+        }
+        .a8{
+            text-decoration: none;
+            color: rgb(29,84,148);
+            font-size: 12px;
+        }
+        nav >div > span{
+            color: rgb(134,134,134);
+            font-size: 12px;
+            margin-right: 5px;
+            margin-left: 5px;
+        }
+        nav >div > p{
+            color: rgb(134,134,134);
+            font-size: 12px;
+        }
+        .box6{
+            display: flex; 
+            align-items: center;  
+            justify-content: center; 
+            line-height: 36px;
+        }
+        .a8:hover{
+            text-decoration:underline;
+        }
+    </style>
+    <body>
+    <header>
+        <a class="a2" href="javascript:;">
+            <img src="https://rescdn.qqmail.com/zh_CN/htmledition/images/webp/logo/qqmail/qqmail_logo_default_35h206ff1.png">
+        </a>
+        <a class="a1" href="https://ui.ptlogin2.qq.com/cgi-bin/login?style=9&appid=522005705&daid=4&s_url=https://wap.mail.qq.com/login/login?auth_type=3&hln_css=http%3A%2F%2Fmail.qq.com%2Fzh_CN%2Fhtmledition%2Fimages%2Flogo%2Fqqmail%2Fqqmail_logo_default_200h.png&low_login=1&hln_autologin=%E8%AE%B0%E4%BD%8F%E7%99%BB%E5%BD%95%E7%8A%B6%E6%80%81">基本版</a>
+        <span class="s1">|</span>
+        <a class="a1" href="https://en.mail.qq.com/">English</a>
+        <span class="s1">|</span>
+        <a class="a1" href="https://app.mail.qq.com/">手机版</a>
+        <span class="s1">|</span>
+        <a class="a1 rr" href="https://exmail.qq.com/?referrer=index_top">企业邮箱</a>
+    </header>
+    <div>
+            <img class="img1" src="https://rescdn.qqmail.com/zh_CN/htmledition/images/webp/tg-mj1e9c5d.jpg">
+    </div>
+    <div class="box1">
+        <div class="box2">
+            <a class="a3" href="javascript:;">微信登陆</a>
+        </div>
+        <div class="box3">
+            <a class="a4" href="javascript:;">QQ登陆</a>
+        </div>
+        <div class="box4">
+        <input type="text" placeholder="&nbsp;&nbsp;支持QQ号/邮箱/手机号登录" class="it1"  />
+        <br>
+        <input type="password" placeholder="&nbsp;&nbsp;QQ密码" class="it2" />
+        <br>
+        <input type="checkbox" class="checkbox" />
+        <span id="span1">下次自动登录</span>
+        </div>
+        
+        <input type="submit" value="登&nbsp;录" class="submit">
+         <a href="javascript:;" class="a5">
+             <img id="imag1"
+             src="C:\Users\zxy\Desktop\动漫图片\QQ图片20211220174524.jpg">
+             扫码快捷登录
+         </a>
+         <a target="_blank" class="a6" href="https://accounts.qq.com/find/password">忘了密码</a>
+         <a target="_blank" class="a7" href="https://ssl.zc.qq.com/v3/index-chs.html?from=pt">注册新账号</a>
+    </div>
+    <nav class="box5">
+        <div class="box6">
+        <a class="a8 a9" target="_blank" href="https://www.tencent.com/">关于腾讯</a><span>|</span>
+        <a class="a8" target="_blank" href="https://mail.qq.com/cgi-bin/readtemplate?check=false&t=mail_clause">服务条款</a><span>|</span>
+        <a class="a8" target="_blank" href="https://wx.mail.qq.com/list/readtemplate?name=app_intro.html#/agreement/appPolicy">隐私政策</a><span>|</span>
+        <a class="a8" target="_blank" href="https://kf.qq.com/product/email.html">客服中心</a><span>|</span>
+        <a target="_blank" href="https://mail.qq.com/zh_CN/contact_us.html" class="a8">联系我们</a><span>|</span>
+        <a target="_blank" class="a8" href="https://service.mail.qq.com/">帮助中心</a><span>|</span>
+        <p> ©1998 - 2021 Tencent Inc. All Rights Reserved.</p>
+    </div>
+    </nav>
+</body>
+</html>
